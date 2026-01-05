@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITRA USAHA KONSTRUKSI - Kontraktor Konstruksi Baja Berat & Fasad Gedung</title>
+    
+    <!-- Meta Tags SEO Penting -->
+    <meta name="description" content="MITRA USAHA KONSTRUKSI adalah kontraktor konstruksi baja berat dan fasad gedung di Bandung. Melayani fabrikasi, erector, dan pemasangan baja profesional.">
+    <meta name="keywords" content="kontraktor baja berat, konstruksi baja, fasad gedung, fabrikasi baja, erector baja, pemasangan baja, kontraktor bandung, jasa konstruksi, borong bahan baja, borong jasa konstruksi">
+    <meta name="author" content="MITRA USAHA KONSTRUKSI">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph Tags untuk Social Media -->
+    <meta property="og:title" content="MITRA USAHA KONSTRUKSI - Kontraktor Konstruksi Baja Berat & Fasad Gedung">
+    <meta property="og:description" content="Kontraktor profesional konstruksi baja berat dan fasad gedung di Bandung. Fabrikasi, erector, dan pemasangan baja berkualitas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mitrausahakonstruksi.co.id">
+    <meta property="og:image" content="https://i.ibb.co/0jT7V6W/logo-mitra-usaha-konstruksi.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mitrausahakonstruksi.co.id">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/0jT7V6W/logo-mitra-usaha-konstruksi.png">
+    
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --success: #198754;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #0dcaf0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --white: #ffffff;
+            --blue-dark: #0a58ca;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 70px;
+            width: auto;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-img img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1.2;
+        }
+        
+        .logo-text p {
+            font-size: 14px;
+            color: var(--secondary);
+            max-width: 300px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 25px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--blue-dark);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            margin-left: 10px;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+        }
+        
+        /* Services Section */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border: 1px solid #eaeaea;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.05);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .service-content p {
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: #f8f9fa;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 30px;
+        }
+        
+        .about-text h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        
+        .about-features {
+            margin-top: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feature i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .contact .section-title h2,
+        .contact .section-title p {
+            color: var(--white);
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 250px;
+        }
+        
+        .contact-icon {
+            background-color: rgba(255,255,255,0.1);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon i {
+            font-size: 28px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .footer-column p, .footer-column a {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+        
+        /* New Service Types */
+        .service-types {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .type-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background-color: #e7f1ff;
+            color: var(--primary);
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        .type-badge.jasa-only {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .workshop-info {
+            background-color: #fff3cd;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .workshop-info i {
+            color: var(--warning);
+            margin-right: 10px;
+        }
+        
+        .phone-large {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            margin: 10px 0;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+                transition: left 0.3s;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero h2 {
+                font-size: 36px;
+            }
+            
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+            
+            .logo-text h1 {
+                font-size: 20px;
+            }
+            
+            .logo-text p {
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 130px 0 80px;
+            }
+            
+            .hero h2 {
+                font-size: 30px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+            }
+            
+            .logo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo-img {
+                margin-right: 0;
+                margin-bottom: 10px;
+                height: 60px;
+            }
+            
+            .logo-text h1 {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h2 {
+                font-size: 26px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        /* Logo Container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Floating WhatsApp Button */
+        .float-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .float-whatsapp:hover {
+            background-color: #1da851;
+            transform: scale(1.1);
+        }
+        
+        /* Schema.org Structured Data - Tidak terlihat di halaman */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Schema.org Structured Data untuk SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MITRA USAHA KONSTRUKSI",
+        "image": "https://i.ibb.co/0jT7V6W/logo-mitra-usaha-konstruksi.png",
+        "description": "Kontraktor konstruksi baja berat dan fasad gedung profesional di Bandung. Melayani fabrikasi, erector, dan pemasangan baja berkualitas.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ciparay",
+            "addressRegion": "Bandung",
+            "addressCountry": "ID"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-6.996",
+            "longitude": "107.646"
+        },
+        "url": "https://mitrausahakonstruksi.co.id",
+        "telephone": "+6285703898859",
+        "priceRange": "Rp",
+        "openingHours": "Mo-Sa 08:00-17:00",
+        "serviceType": "Konstruksi Baja Berat, Fasad Gedung, Fabrikasi Baja"
+    }
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285703898859?text=Halo%20MITRA%20USAHA%20KONSTRUKSI,%20saya%20ingin%20konsultasi%20tentang%20jasa%20konstruksi" class="float-whatsapp" target="_blank" aria-label="Hubungi via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-img">
+                        <!-- Logo dari gambar yang dikirim -->
+                        <img src="https://i.ibb.co/0jT7V6W/logo-mitra-usaha-konstruksi.png" alt="Logo MITRA USAHA KONSTRUKSI - Kontraktor Konstruksi Baja Berat & Fasad Gedung">
+                    </div>
+                    <div class="logo-text">
+                        <h1>MITRA USAHA KONSTRUKSI</h1>
+                        <p>Kontraktor Konstruksi Baja Berat & Kontraktor Fasad Gedung</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Spesialis Konstruksi Baja Berat & Fasad Gedung</h1>
+            <p>MITRA USAHA KONSTRUKSI menyediakan layanan konstruksi baja berat dan fasad gedung profesional dengan kualitas terjamin, harga kompetitif, dan pengerjaan tepat waktu untuk berbagai jenis proyek konstruksi.</p>
+            <div class="phone-large">0857-0389-8859</div>
+            <div>
+                <a href="#contact" class="btn">Hubungi Kami</a>
+                <a href="https://wa.me/6285703898859?text=Halo%20MITRA%20USAHA%20KONSTRUKSI,%20saya%20ingin%20konsultasi%20tentang%20jasa%20konstruksi" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Layanan Kami</h2>
+                <p>Kami menyediakan berbagai layanan konstruksi baja berat dan fasad gedung untuk memenuhi kebutuhan proyek Anda</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <!-- Gambar konstruksi baja -->
+                        <img src="https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Konstruksi Baja Berat - MITRA USAHA KONSTRUKSI">
+                    </div>
+                    <div class="service-content">
+                        <h3>Konstruksi Baja Berat</h3>
+                        <p>Pembangunan struktur baja berat untuk gedung, pabrik, gudang, dan fasilitas industri dengan standar keamanan tertinggi.</p>
+                        <div class="service-types">
+                            <span class="type-badge">Borong Bahan + Jasa</span>
+                            <span class="type-badge jasa-only">Borong Jasa Saja</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <!-- Gambar fasad gedung -->
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fasad Gedung - MITRA USAHA KONSTRUKSI">
+                    </div>
+                    <div class="service-content">
+                        <h3>Kontraktor Fasad Gedung</h3>
+                        <p>Desain, fabrikasi, dan instalasi fasad gedung dengan material berkualitas untuk estetika dan fungsionalitas optimal.</p>
+                        <div class="service-types">
+                            <span class="type-badge">Borong Bahan + Jasa</span>
+                            <span class="type-badge jasa-only">Borong Jasa Saja</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <!-- Gambar fabrikasi -->
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fabrikasi Baja - MITRA USAHA KONSTRUKSI">
+                    </div>
+                    <div class="service-content">
+                        <h3>Fabrikasi Baja</h3>
+                        <p>Fabrikasi komponen baja sesuai desain dan spesifikasi teknis dengan presisi tinggi untuk berbagai kebutuhan konstruksi.</p>
+                        <div class="service-types">
+                            <span class="type-badge">Borong Bahan + Jasa</span>
+                            <span class="type-badge jasa-only">Borong Jasa Saja</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <!-- Gambar erector -->
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Erector Baja - MITRA USAHA KONSTRUKSI">
+                    </div>
+                    <div class="service-content">
+                        <h3>Erector / Pemasangan Baja</h3>
+                        <p>Pemasangan dan perakitan struktur baja dengan alat berat dan tenaga ahli berpengalaman untuk hasil yang optimal.</p>
+                        <div class="service-types">
+                            <span class="type-badge jasa-only">Borong Jasa Saja</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <!-- Gambar perawatan -->
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Perawatan & Perbaikan Struktur - MITRA USAHA KONSTRUKSI">
+                    </div>
+                    <div class="service-content">
+                        <h3>Perawatan & Perbaikan Struktur</h3>
+                        <p>Layanan perawatan rutin dan perbaikan struktur baja dan fasad untuk menjaga keamanan dan keawetan bangunan.</p>
+                        <div class="service-types">
+                            <span class="type-badge">Borong Bahan + Jasa</span>
+                            <span class="type-badge jasa-only">Borong Jasa Saja</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <!-- Gambar konsultasi -->
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Konsultasi & Desain Struktur - MITRA USAHA KONSTRUKSI">
+                    </div>
+                    <div class="service-content">
+                        <h3>Konsultasi & Desain Struktur</h3>
+                        <p>Layanan konsultasi dan desain struktur baja dan fasad oleh tenaga ahli untuk memastikan keandalan dan efisiensi proyek.</p>
+                        <div class="service-types">
+                            <span class="type-badge jasa-only">Borong Jasa Saja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang MITRA USAHA KONSTRUKSI</h2>
+                    <p>Kami adalah perusahaan spesialis konstruksi baja berat dan fasad gedung yang telah berpengalaman dalam menangani berbagai proyek konstruksi di berbagai sektor industri. Dengan tim ahli dan peralatan modern, kami memberikan solusi konstruksi yang aman, efisien, dan berkualitas tinggi.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Berpengalaman lebih dari 10 tahun dalam konstruksi baja berat dan fasad</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Menggunakan material berkualitas dengan standar internasional</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tim ahli bersertifikat dan peralatan modern</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pengerjaan tepat waktu dengan perencanaan matang</span>
+                        </div>
+                    </div>
+                    
+                    <div class="workshop-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>WORKSHOP:</strong> CIPARAY BANDUNG</p>
+                        <p><i class="fas fa-envelope"></i> <strong>EMAIL:</strong> usahamandirimitra43@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i> <strong>TELEPON/WA:</strong> 0857-0389-8859</p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tentang MITRA USAHA KONSTRUKSI - Kontraktor Baja Berat">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Konsultasikan kebutuhan proyek konstruksi baja berat dan fasad gedung Anda dengan tim ahli kami</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lokasi Workshop</h3>
+                    <p>Ciparay, Bandung, Jawa Barat</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telepon / WhatsApp</h3>
+                    <p>0857-0389-8859</p>
+                    <a href="https://wa.me/6285703898859?text=Halo%20MITRA%20USAHA%20KONSTRUKSI,%20saya%20ingin%20konsultasi%20tentang%20jasa%20konstruksi" class="btn btn-whatsapp" style="margin-top: 10px;" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Sekarang
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>usahamandirimitra43@gmail.com</p>
+                    <a href="mailto:usahamandirimitra43@gmail.com?subject=Konsultasi%20Proyek%20Konstruksi" class="btn" style="margin-top: 10px;">
+                        <i class="fas fa-envelope"></i> Kirim Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <div class="logo-img">
+                            <img src="https://i.ibb.co/0jT7V6W/logo-mitra-usaha-konstruksi.png" alt="Logo MITRA USAHA KONSTRUKSI">
+                        </div>
+                        <div class="logo-text">
+                            <h3 style="color: white; font-size: 20px;">MITRA USAHA KONSTRUKSI</h3>
+                            <p style="color: rgba(255,255,255,0.7);">Kontraktor Konstruksi Baja Berat & Fasad Gedung</p>
+                        </div>
+                    </div>
+                    <p>Spesialis konstruksi baja berat dan fasad gedung dengan pengalaman lebih dari 10 tahun, melayani berbagai proyek konstruksi di seluruh Indonesia.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/6285703898859" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Layanan Kami</h3>
+                    <a href="#services">Konstruksi Baja Berat</a>
+                    <a href="#services">Kontraktor Fasad Gedung</a>
+                    <a href="#services">Fabrikasi Baja</a>
+                    <a href="#services">Erector / Pemasangan Baja</a>
+                    <a href="#services">Perawatan & Perbaikan</a>
+                    <a href="#services">Konsultasi & Desain</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Workshop: Ciparay, Bandung</p>
+                    <p><i class="fas fa-phone-alt"></i> 0857-0389-8859</p>
+                    <p><i class="fas fa-envelope"></i> usahamandirimitra43@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Senin - Sabtu: 08:00 - 17:00</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> MITRA USAHA KONSTRUKSI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileToggle.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileToggle.querySelector('i').classList.add('fa-bars');
+                mobileToggle.querySelector('i').classList.remove('fa-times');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Sticky header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+        
+        // Set current year in copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Add loading lazy for images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.loading = 'lazy';
+            });
+        });
+    </script>
+</body>
+</html>
