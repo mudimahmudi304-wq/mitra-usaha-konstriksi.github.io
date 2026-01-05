@@ -1,2 +1,2 @@
-# mitra-usaha-konstriksi.github.io
+# mitra-usaha-konstruksi.github.io
 Website MITRA USAHA KONSTRUKSI
